@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7.5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ee616161">
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/spica1" />
+
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gambar"
+            android:text="Tahun Rilis"/>
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar"
+            android:text="Judul" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/judul"
+            android:text="Nama Penyanyi" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
