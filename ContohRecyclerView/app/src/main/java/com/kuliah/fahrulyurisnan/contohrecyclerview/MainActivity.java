@@ -1,15 +1,10 @@
 package com.kuliah.fahrulyurisnan.contohrecyclerview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.widget.LinearLayout;
 
-import com.kuliah.fahrulyurisnan.contohrecyclerview.adapter.MyAdapter;
 import com.kuliah.fahrulyurisnan.contohrecyclerview.adapter.MyDataAdapter;
 import com.kuliah.fahrulyurisnan.contohrecyclerview.models.MyData;
 

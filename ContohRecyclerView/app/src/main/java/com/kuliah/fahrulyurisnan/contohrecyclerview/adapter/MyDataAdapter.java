@@ -11,12 +11,10 @@ import android.widget.TextView;
 import com.kuliah.fahrulyurisnan.contohrecyclerview.R;
 import com.kuliah.fahrulyurisnan.contohrecyclerview.models.MyData;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
 
 public class MyDataAdapter extends RecyclerView.Adapter<MyDataAdapter.ViewHolder> {
-    public List<MyData> myData;
+    private List<MyData> myData;
     public MyDataAdapter(List<MyData> myData) {
         this.myData = myData;
     }
@@ -24,7 +22,8 @@ public class MyDataAdapter extends RecyclerView.Adapter<MyDataAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_list,viewGroup,false);
+        View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_list,
+                viewGroup,false);
         return new ViewHolder(itemView);
     }
 
@@ -45,7 +44,7 @@ public class MyDataAdapter extends RecyclerView.Adapter<MyDataAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView judul,nama,tahun;
         public ImageView gambar;
-        public ViewHolder(@NonNull View itemView) {
+        ViewHolder(@NonNull View itemView) {
             super(itemView);
             nama = itemView.findViewById(R.id.nama);
             judul = itemView.findViewById(R.id.judul);

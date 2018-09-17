@@ -1,7 +1,5 @@
 package com.kuliah.fahrulyurisnan.contohrecyclerview.models;
 
-import android.graphics.drawable.Drawable;
-
 public class MyData {
     public String judul,nama,tahun;
     public int gambar;
