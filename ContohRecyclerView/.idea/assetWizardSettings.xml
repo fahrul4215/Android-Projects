@@ -18,24 +18,24 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
-                                      <entry key="foregroundText">
+                                      <entry key="backgroundImage">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="ffffff" />
+                                                <entry key="scalingPercent" value="101" />
                                               </map>
                                             </option>
                                           </PersistentState>
                                         </value>
                                       </entry>
-                                      <entry key="foregroundTextAsset">
+                                      <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="fontFamily" value="Poor Richard" />
-                                                <entry key="text" value="01" />
+                                                <entry key="scalingPercent" value="123" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -46,8 +46,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="a61b2a" />
-                                      <entry key="foregroundAssetType" value="TEXT" />
+                                      <entry key="backgroundColor" value="2bae2b" />
+                                      <entry key="foregroundImage" value="C:\Users\AceCobar\Pictures\web_hi_res_512.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -61,6 +61,11 @@
                 </map>
               </option>
             </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState />
           </value>
         </entry>
       </map>

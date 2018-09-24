@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AwalActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Musik Bosq"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/viewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="15dp"
+        android:text="Email"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_toEndOf="@+id/viewPassword"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/viewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewEmail"
+        android:layout_margin="15dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewEmail"
+        android:layout_toEndOf="@+id/viewPassword"
+        android:layout_marginRight="15dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/buttonPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:background="#ff0000"
+        android:layout_below="@+id/viewPassword"/>
+
+</RelativeLayout>
