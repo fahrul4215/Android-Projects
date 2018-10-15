@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".ViewMovie" />
         <activity android:name=".InsertMovie" />
-        <activity android:name=".UpdateMovie"></activity>
+        <activity android:name=".UpdateMovie" />
     </application>
 
 </manifest>
