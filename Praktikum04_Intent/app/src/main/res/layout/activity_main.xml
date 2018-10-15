@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:text="Nama"/>
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/nameText"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/umurText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="26dp"
+        android:text="Umur"/>
+
+    <EditText
+        android:id="@+id/umur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/umurText"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/jeniskelaminText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/umur"
+        android:layout_alignStart="@+id/gridLayout1"
+        android:text="Jenis Kelamin"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/umurText"
+        android:layout_below="@id/umur"
+        android:layout_marginTop="44dp">
+        <RadioGroup
+            android:id="@+id/jeniskelamin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Perempuan"/>
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"/>
+        </RadioGroup>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/kirimdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/gridLayout1"
+        android:layout_below="@id/gridLayout1"
+        android:layout_marginTop="21dp"
+        android:text="Kirim Data"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">07 SQLite Database</string>
+    <string-array name="listGenre">
+        <item>Aksi</item>
+        <item>Horror</item>
+        <item>Komedi</item>
+        <item>Drama</item>
+        <item>Cinta-cintaan</item>
+        <item>Ga Jelas</item>
+    </string-array>
+</resources>

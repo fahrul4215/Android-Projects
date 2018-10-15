@@ -25,11 +25,13 @@ public class AwalActivity extends AppCompatActivity {
             public void onClick(View v) {
 //                Log.v("Edit Text", mUsername.getText().toString());
 //                Log.v("Edit Text", mPassword.getText().toString());
-                if (mUsername.getText().toString().equals("Fahrul") && mPassword.getText().toString().equals("fahrul")){
+                if (mUsername.getText().toString().equals("Fahrul") && mPassword.getText().
+                        toString().equals("fahrul")){
                     Intent i = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(i);
                 } else {
-                    Toast.makeText(getApplicationContext(), "Username atau Password Salah", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Username atau Password Salah",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });

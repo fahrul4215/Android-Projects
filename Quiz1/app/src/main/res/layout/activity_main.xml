@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="26dp"
+        android:text="Nama"/>
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/nameText"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="26dp"
+        android:text="Email"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/emailText"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_alignStart="@+id/emailText"
+        android:text="Country"
+        android:layout_marginTop="26dp"/>
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/countryText"
+        android:entries="@id/emailText">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/tahunlahirText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryText"
+        android:layout_alignStart="@id/countryText"
+        android:text="Tahun Lahir"
+        android:layout_marginTop="26dp"/>
+
+    <EditText
+        android:id="@+id/tahunlahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tahunlahirText"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tahunlahirText"
+        android:layout_alignStart="@id/tahunlahirText"
+        android:text="Gender"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@id/genderText"
+        android:layout_below="@id/tahunlahirText"
+        android:layout_alignParentEnd="true">
+        <RadioButton
+            android:id="@+id/femaleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Perempuan"/>
+        <RadioButton
+            android:id="@+id/maleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/kirimdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/gender"
+        android:layout_below="@id/genderText"
+        android:layout_marginTop="30dp"
+        android:text="Kirim Data"/>
+
+</RelativeLayout>

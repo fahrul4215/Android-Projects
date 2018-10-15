@@ -291,7 +291,8 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new MyDataAdapter(myData);
         mRecyclerView.setAdapter(mAdapter);
 
-        mRecyclerView.addOnItemTouchListener((new RecyclerTouchListener(getApplicationContext(), mRecyclerView, new ClickListener() {
+        mRecyclerView.addOnItemTouchListener((new RecyclerTouchListener(getApplicationContext(),
+                mRecyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MyData data = myData.get(position);

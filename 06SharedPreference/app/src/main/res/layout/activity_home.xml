@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary"
+            android:src="@mipmap/ic_launcher"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Welcome bosq"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txv_username"
+                android:layout_width="match_parent"
+                android:layout_below="@id/txv_greeting"
+                android:textSize="20sp"
+                android:text="bosq"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txv_greeting"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:hint="status bosq?"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST!!"
+        android:id="@+id/btn_post"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:id="@+id/btn_logout"
+        android:layout_below="@id/btn_post"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:onClick="onClick_logout"/>
+
+</RelativeLayout>
