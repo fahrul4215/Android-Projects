@@ -39,7 +39,8 @@ public class Pembelian {
     }
 
     public String getTanggal_beli() {
-        return tanggal_beli;
+        String[] tgl = tanggal_beli.split("-");
+        return tgl[2]+"-"+tgl[1]+"-"+tgl[0];
     }
 
     public void setTanggal_beli(String tanggal_beli) {
@@ -62,3 +63,4 @@ public class Pembelian {
         this.id_tiket = id_tiket;
     }
 }
+

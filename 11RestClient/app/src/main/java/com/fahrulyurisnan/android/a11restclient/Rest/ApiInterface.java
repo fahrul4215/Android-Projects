@@ -11,33 +11,25 @@ import retrofit2.http.HTTP;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 
-public class ApiInterface {
-    @GET("pembelian/user")
-    Call<GetPembelian> getPembelian() {
-        return null;
-    }
+public interface ApiInterface {
+    @GET("pembelian/transaksi")
+    Call<GetPembelian> getPembelian();
 
     @FormUrlEncoded
-    @POST("pembelian/user")
+    @POST("pembelian/transaksi")
     Call<PostPutDelPembelian> postPembelian
             (@Field("id_pembelian") String idPembelian, @Field("id_pembeli") String idPembeli,
              @Field("tanggal_beli") String tanggalBeli, @Field("total_harga") String totalHarga,
-             @Field("id_tiket") String idTiket) {
-        return null;
-    }
+             @Field("id_tiket") String idTiket);
 
     @FormUrlEncoded
-    @PUT("pembelian/user")
+    @PUT("pembelian/transaksi")
     Call<PostPutDelPembelian> putPembelian(
             @Field("id_pembelian") String idPembelian, @Field("id_pembeli") String idPembeli,
             @Field("tanggal_beli") String tanggalBeli, @Field("total_harga") String totalHarga,
-            @Field("id_tiket") String idTiket) {
-        return null;
-    }
+            @Field("id_tiket") String idTiket);
 
     @FormUrlEncoded
-    @HTTP(method = "DELETE", path = "pembelian/user", hasBody = true)
-    Call<PostPutDelPembelian> deletePembelian(@Field("id_pembelian") String idPembelian) {
-        return null;
-    }
+    @HTTP(method = "DELETE", path = "pembelian/transaksi", hasBody = true)
+    Call<PostPutDelPembelian> deletePembelian(@Field("id_pembelian") String idPembelian);
 }
